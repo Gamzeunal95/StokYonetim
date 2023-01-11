@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33209.295
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokYonetim.Entities", "StokYonetim.Entities\StokYonetim.Entities.csproj", "{4DA4F8ED-78CE-49F7-BCDC-BB3C4281E5D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokYonetim.DAL", "StokYonetim.DAL\StokYonetim.DAL.csproj", "{39A3184B-091A-4434-B074-DD02AE3DF7F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4DA4F8ED-78CE-49F7-BCDC-BB3C4281E5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DA4F8ED-78CE-49F7-BCDC-BB3C4281E5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DA4F8ED-78CE-49F7-BCDC-BB3C4281E5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A3184B-091A-4434-B074-DD02AE3DF7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A3184B-091A-4434-B074-DD02AE3DF7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A3184B-091A-4434-B074-DD02AE3DF7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A3184B-091A-4434-B074-DD02AE3DF7F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
