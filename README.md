@@ -2,7 +2,7 @@
 - Class Library 
 - Proje Konusu : Hem clientWebService + kendi WebServiceimizi yazacağız - Token olacak - Authentication 
 - Web APİ tarafına bağlanılacakları ayrı bir yerde tutmayı tercih edebiliriz. Ayrı bir DB olabilir. (APi tüketecek olan username password verilerini)
-- Postgresql kullanıldı. Karşı PC'deki DB yere bağlanıldı. PC kendi localinde çalıştırılmadı.
+- Postgresql kullanıldı.Dberaver üzerinden DB'ye erişildi. Karşı PC'deki DB yere bağlanıldı. PC kendi localinde çalıştırılmadı.
 - NOT: ORM - > entitiy framework core (birde mirco ORM var bu da Dapper)
 
 # Project 1 - StokYonetim.Entities
@@ -40,8 +40,7 @@
   - Microsoft.EntityFrameworkCore.Design
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
 - **Controller**
-  - KategoriController
-
+  - KategoriController 
 
 
 
