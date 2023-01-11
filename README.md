@@ -35,6 +35,7 @@
 - Aşağıdaki paketler install edildi.
   - Npgsql.EntityFrameworkCore.PostgreSQL
   - Microsoft.EntityFrameworkCore.Design
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
 
 
 
