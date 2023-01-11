@@ -42,7 +42,7 @@
 
 
 ### API yada clietn olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde thunder Client ya da Postman de test ederken de
-Get -> Selecet
+Get -> Select
 Put -> Update
 Post -> Create
 Delete -> Delete
