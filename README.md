@@ -37,3 +37,7 @@
 - Dbset
 - Configurations (StokYonetimDbContext de yazdığımız OnModelCreating methodunu şişirmemek için bu kısımda classlar açarak configure ediyoruz. Navigation prop. lar)
 - Daha sonrasında migrations olusturabilirsiniz . Repositorylerden önce yapabilirsiniz.
+
+
+- Tred ?? Araştır Async ile bağlantılı 
+- Task verdiğinizde başınada async eklemen aşağıdada await ile beklemen lazım
