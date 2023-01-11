@@ -21,6 +21,7 @@
 - **EfCore Folder**
   - **Abstact**
     - IRepositoryBase (Interface)
+    - IKategoriDAL
   - **Concrete**
     - RepositoryBase
   - **Contexts**
@@ -29,8 +30,14 @@
     - KategoriConfiguration  
     - StokConfiguration
     
-        
-    
+# Project 3 - StokYonetim.WebApi (Bu kendi API'miz olacak)
+- Asp.Net Core Web API projesi
+-  
+
+
+
+
+
     
  # NOT: Bir Projede ilk aşamalar nasıl olmalıdır. Bu projede akış nasıl ilerlerdi
 - Entity
@@ -38,6 +45,8 @@
 - Configurations (StokYonetimDbContext de yazdığımız OnModelCreating methodunu şişirmemek için bu kısımda classlar açarak configure ediyoruz. Navigation prop. lar)
 - Daha sonrasında migrations olusturabilirsiniz . Repositorylerden önce yapabilirsiniz.
 
+- Kendi API mizi yazdığımız zaman Asp.Net Core Web API projesi ama client olduğumuz zaman API açmıyoruz crud işlemlerini yapıyoruz Client olarak başka bir API ye işlem yapıyoruz.
 
+- Abstract klasörüne ınterface class ekleme yapıldı sonrasında açılan classın Concrete işine DAL classını açıldı. Örneğin; IKategoriDAL -> KategoriDAL
 - Tred ?? Araştır Async ile bağlantılı 
 - Task verdiğinizde başınada async eklemen aşağıdada await ile beklemen lazım
