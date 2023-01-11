@@ -32,7 +32,9 @@
     
 # Project 3 - StokYonetim.WebApi (Bu kendi API'miz olacak)
 - Asp.Net Core Web API projesi
--  
+- Aşağıdaki paketler install edildi.
+  - Npgsql.EntityFrameworkCore.PostgreSQL
+  - Microsoft.EntityFrameworkCore.Design
 
 
 
