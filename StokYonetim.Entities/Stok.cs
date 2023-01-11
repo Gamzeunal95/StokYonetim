@@ -1,6 +1,6 @@
 ﻿namespace StokYonetim.Entities
 {
-    public class Stok
+    public class Stok : BaseEntity
     {
         public int Id { get; set; }
         public string StokAdi { get; set; }

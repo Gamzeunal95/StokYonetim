@@ -1,6 +1,6 @@
 ﻿namespace StokYonetim.Entities
 {
-    public class Kategori
+    public class Kategori : BaseEntity
     {
         public int Id { get; set; }
         public string KategoriAdi { get; set; }

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokYonetim.Entities", "Sto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokYonetim.DAL", "StokYonetim.DAL\StokYonetim.DAL.csproj", "{39A3184B-091A-4434-B074-DD02AE3DF7F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokYonetim.WebApi", "StokYonetim.WebApi\StokYonetim.WebApi.csproj", "{78BDEDC6-3C2C-4AA5-BF5A-E69299AABFCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{39A3184B-091A-4434-B074-DD02AE3DF7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39A3184B-091A-4434-B074-DD02AE3DF7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39A3184B-091A-4434-B074-DD02AE3DF7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78BDEDC6-3C2C-4AA5-BF5A-E69299AABFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78BDEDC6-3C2C-4AA5-BF5A-E69299AABFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78BDEDC6-3C2C-4AA5-BF5A-E69299AABFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78BDEDC6-3C2C-4AA5-BF5A-E69299AABFCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
