@@ -21,9 +21,12 @@
 - **EfCore Folder**
   - **Abstact**
     - IRepositoryBase (Interface)
-    - IKategoriDAL
+    - IKategoriDal
+    - IStokDal
   - **Concrete**
     - RepositoryBase
+    - KategoriDal
+    - StokDal
   - **Contexts**
     - StokYonetimDbContext
   - **EntityConfigurations** (StokYonetimDbContext de yazdığımız OnModelCreating methodunu şişirmemek için bu kısımda classlar açarak configure ediyoruz. Navigation prop. lar)
@@ -36,7 +39,8 @@
   - Npgsql.EntityFrameworkCore.PostgreSQL
   - Microsoft.EntityFrameworkCore.Design
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
-
+- **Controller**
+  - KategoriController
 
 
 
