@@ -9,6 +9,10 @@ namespace StokYonetim.DAL.EFCore.Contexts
         public DbSet<Kategori> Kategoriler { get; set; }
         public DbSet<Stok> Stoklar { get; set; }
 
+        public StokYonetimDbContext(DbContextOptions<StokYonetimDbContext> options) : base(options)
+        {
+
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);

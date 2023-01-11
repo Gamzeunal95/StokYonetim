@@ -1,22 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StokYonetim.DAL.EFCore.Concrete;
+using StokYonetim.DAL.EFCore.Abstract;
 
 namespace StokYonetim.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class KategoriController : ControllerBase
     {
-        private readonly KategoriDal kategoriDal;
+        private readonly IKategoriDal kategoriDal;
 
-        public KategoriController(KategoriDal kategoriDal)
+        public KategoriController(IKategoriDal kategoriDal)
         {
             this.kategoriDal = kategoriDal;
         }
+
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok();
+            var result = await kategoriDal.GetAllAsync();
+            return Ok(result);
         }
     }
 }

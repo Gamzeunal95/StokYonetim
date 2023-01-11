@@ -11,7 +11,7 @@ namespace StokYonetim.DAL.EFCore.Concrete
 
         public RepositoryBase(StokYonetimDbContext dbContext)
         {
-            dbContext = new StokYonetimDbContext();
+            this.dbContext = dbContext;
         }
 
         public async Task<int> CreateAsync(T entity)
