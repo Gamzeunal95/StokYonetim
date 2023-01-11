@@ -22,7 +22,7 @@
   - **Abstact**
     - IRepositoryBase (Interface)
   - **Concrete**
-    - ...
+    - RepositoryBase
   - **Contexts**
     - StokYonetimDbContext
   - **EntityConfigurations** (StokYonetimDbContext de yazdığımız OnModelCreating methodunu şişirmemek için bu kısımda classlar açarak configure ediyoruz. Navigation prop. lar)
