@@ -1,10 +1,16 @@
 ﻿using StokYonetim.DAL.EFCore.Abstract;
+using StokYonetim.DAL.EFCore.Contexts;
 using System.Linq.Expressions;
 
 namespace StokYonetim.DAL.EFCore.Concrete
 {
-    public class RepositoryBase<T> : IRepositoryBase<T> where T : class
+    public class RepositoryBase<T> : IRepositoryBase<T> where T : class, new()
     {
+        public readonly StokYonetimDbContext dbContext;
+        public RepositoryBase()
+        {
+            StokYonetimDbContext dbContext = new StokYonetimDbContext();
+        }
         public Task<int> CreateAsync(T entity)
         {
             throw new NotImplementedException();
