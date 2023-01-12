@@ -8,7 +8,15 @@ namespace StokYonetim.DAL.EFCore.Contexts
     {
         public DbSet<Kategori> Kategoriler { get; set; }
         public DbSet<Stok> Stoklar { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
+
+        public StokYonetimDbContext()
+        {
+
+        }
         public StokYonetimDbContext(DbContextOptions<StokYonetimDbContext> options) : base(options)
         {
 

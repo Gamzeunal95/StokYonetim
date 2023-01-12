@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StokYonetim.BL\StokYonetim.BL.csproj" />
     <ProjectReference Include="..\StokYonetim.DAL\StokYonetim.DAL.csproj" />
     <ProjectReference Include="..\StokYonetim.Entities\StokYonetim.Entities.csproj" />
   </ItemGroup>

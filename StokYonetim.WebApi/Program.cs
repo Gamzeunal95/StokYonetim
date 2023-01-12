@@ -1,8 +1,9 @@
 
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using StokYonetim.DAL.EFCore.Abstract;
-using StokYonetim.DAL.EFCore.Concrete;
 using StokYonetim.DAL.EFCore.Contexts;
+using StokYonetim.WebApi.Extensions;
+using System.Reflection;
 
 namespace StokYonetim.WebApi
 {
@@ -21,9 +22,11 @@ namespace StokYonetim.WebApi
             builder.Services.AddDbContext<StokYonetimDbContext>(
                 options => options.UseNpgsql(builder.Configuration.GetConnectionString("StokYonetim")));
 
-            builder.Services.AddScoped<IKategoriDal, KategoriDal>();
-            builder.Services.AddScoped<IStokDal, StokDal>();
 
+            // bu kýsým çok dolduðu için extensions açýyoruz  ve aþaðýdaki gibi belirtiyoruz.
+            builder.Services.AddStokExtensions();
+
+            builder.Services.AddValidatorsFromAssembly(Assembly.LoadFrom("StokYonetim.BL.dll"));
 
             builder.Services.AddSwaggerGen();
 
