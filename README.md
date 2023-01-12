@@ -61,6 +61,8 @@
 
 - Kendi API mizi yazdığımız zaman Asp.Net Core Web API projesi ama client olduğumuz zaman API açmıyoruz crud işlemlerini yapıyoruz Client olarak başka bir API ye işlem yapıyoruz.
 
+
+- Clasın içinde ICollection var ise has many ile başşlayabiliriz. başlıyoruz
 - Abstract klasörüne ınterface class ekleme yapıldı sonrasında açılan classın Concrete işine DAL classını açıldı. Örneğin; IKategoriDAL -> KategoriDAL
 - Tred ?? Araştır Async ile bağlantılı 
 - Task verdiğinizde başınada async eklemen aşağıdada await ile beklemen lazım
