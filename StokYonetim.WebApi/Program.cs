@@ -26,7 +26,7 @@ namespace StokYonetim.WebApi
             // bu kýsým çok dolduðu için extensions açýyoruz  ve aþaðýdaki gibi belirtiyoruz.
             builder.Services.AddStokExtensions();
 
-            builder.Services.AddValidatorsFromAssembly(Assembly.LoadFrom("StokYonetim.BL.dll"));
+            builder.Services.AddValidatorsFromAssembly(Assembly.("StokYonetim.BL.dll"));
 
             builder.Services.AddSwaggerGen();
 

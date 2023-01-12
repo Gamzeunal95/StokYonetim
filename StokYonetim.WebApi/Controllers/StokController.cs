@@ -10,10 +10,12 @@ namespace StokYonetim.WebApi.Controllers
     public class StokController : ControllerBase
     {
         private readonly IStokManager stokManager;
+        private readonly IValidator<Stok> validator;
 
         public StokController(IStokManager stokManager, IValidator<Stok> validator)
         {
             this.stokManager = stokManager;
+            this.validator = validator;
         }
 
         [HttpGet]
