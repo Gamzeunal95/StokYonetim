@@ -56,6 +56,8 @@
 - Dbset
 - Configurations (StokYonetimDbContext de yazdığımız OnModelCreating methodunu şişirmemek için bu kısımda classlar açarak configure ediyoruz. Navigation prop. lar)
 - Daha sonrasında migrations olusturabilirsiniz . Repositorylerden önce yapabilirsiniz.
+- Kategori içinde Stok içinde API controller yazıldı. Swagger üzerinden test edildi.
+- Sonra Entities'e Role - User-UserROle ekledik ve sonrasında EntityConfigurations klasörüne de ekleme yaptık
 
 - Kendi API mizi yazdığımız zaman Asp.Net Core Web API projesi ama client olduğumuz zaman API açmıyoruz crud işlemlerini yapıyoruz Client olarak başka bir API ye işlem yapıyoruz.
 
