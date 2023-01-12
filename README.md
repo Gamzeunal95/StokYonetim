@@ -11,6 +11,7 @@
   - Stok.cs
   
 # Project 2 - StokYonetim.DAL
+- Class Library 
 - Aşağıdaki paketler install edildi.
   - Npgsql.EntityFrameworkCore.PostgreSQL
   - Microsoft.EntityFrameworkCore.Design
@@ -38,11 +39,28 @@
 - Aşağıdaki paketler install edildi.
   - Npgsql.EntityFrameworkCore.PostgreSQL
   - Microsoft.EntityFrameworkCore.Design
-- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL & StokYonetim.BL )
 - **Controller**
   - KategoriController 
+  - Stokcontroller
+- **Extensions**
+- StokYonetimExtensions (program.cs dosyasında şişme olmaması için böyle bir class açıyoruz ve program cs de belirtiyoruz)
 
-
+# Project 3 - StokYonetim.BL  (Manager kısmında ne varsa bu kısımda yani iş katmanı - İş işle alakalı her özellik interface classlarında belirtilecek iş kuralları)
+- Class Library 
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
+- Aşağıdaki paketler install edildi.
+  - FluentValidation.AspNetCore
+- **Abstract*
+  - IManagerBase(Interface)
+  - IKategoriManager
+  - IStokManager
+- **Concrete**
+  - ManagerBase
+  - IKategoriManager
+  - IStokManager
+- **Validations**
+  - StokValidation
 
 
 ### API yada clietn olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde thunder Client ya da Postman de test ederken de
