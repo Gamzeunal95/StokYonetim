@@ -19,7 +19,6 @@
 - Aşağıdaki paketler install edildi.
   - Npgsql.EntityFrameworkCore.PostgreSQL
   - Microsoft.EntityFrameworkCore.Design  
-
 - Bir ORM kullanmamız gerekir. Bunun içinde entity Framework kullanıldı.
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities projesi)
 
@@ -46,10 +45,11 @@
 # Project 3 - StokYonetim.WebApi (Bu kendi API'miz olacak)
 - Asp.Net Core Web API projesi
 - Aşağıdaki paketler install edildi.
-  - Npgsql.EntityFrameworkCore.PostgreSQL
-  - Microsoft.EntityFrameworkCore.Design
-   - Microsoft.AspNetCore.Authentication.JwtBearer  -> (Token ile alakalı classları olusturduktan sonra)
+    - Npgsql.EntityFrameworkCore.PostgreSQL
+    - Microsoft.EntityFrameworkCore.Design
+    - Microsoft.AspNetCore.Authentication.JwtBearer  -> (Token ile alakalı classları olusturduktan sonra)
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL & StokYonetim.BL )
+
 - **Controller**
   - KategoriController 
   - Stokcontroller
