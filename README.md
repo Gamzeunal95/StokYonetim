@@ -88,6 +88,7 @@
 - Put -> Update
 - Post -> Create
 - Delete -> Delete
+- Token alırken post olarak
     
  # NOT: Bir Projede ilk aşamalar nasıl olmalıdır. Bu projede akış nasıl ilerlerdi
 - Entity
