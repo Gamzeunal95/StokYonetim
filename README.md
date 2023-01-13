@@ -1,4 +1,4 @@
-# StokYonetim (Bu Proje Tamamanacak)
+# StokYonetim (Client kısmı mauı da yapıldı bu kısımda da yap tamamla)
 - Class Library 
 - Proje Konusu : Hem clientWebService + kendi WebServiceimizi yazacağız - Token olacak - Authentication 
 - Web APİ tarafına bağlanılacakları ayrı bir yerde tutmayı tercih edebiliriz. Ayrı bir DB olabilir. (APi tüketecek olan username password verilerini)
@@ -60,7 +60,7 @@
 - Token
 - TokenHandler
 - LoginModel
-
+- NOT : JWT ayarlamalaını program.cs de yaptıktan sonra appsetting kısmında tanımlanması gere yapıldı.
 --------------------------------------------------- 
 
 # Project 3 - StokYonetim.BL  
