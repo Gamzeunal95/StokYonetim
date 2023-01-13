@@ -1,7 +1,9 @@
 ﻿using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using StokYonetim.BL.Abstract;
 using StokYonetim.Entities;
+using System.Net;
 
 namespace StokYonetim.WebApi.Controllers
 {
@@ -19,10 +21,10 @@ namespace StokYonetim.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
         {
             var result = await stokManager.GetAllAsync();
-            if (result.Count == 0)
+            if (result == null)
             {
                 return NotFound();
             }
@@ -47,17 +49,26 @@ namespace StokYonetim.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> StokEkle(Stok stok)  //Create-Post
+        public async Task<int> StokEkle(Stok stok)  //Create-Post
         {
-            var sonuc = await stokManager.CreateAsync(stok);
-            if (sonuc > 0)
+            ValidationResult valresult = await validator.ValidateAsync(stok);
+
+            if (!valresult.IsValid)
             {
-                return Ok();
+
             }
-            else
+
+
+            var result = await stokManager.CreateAsync(stok);
+            if (result == null)
             {
-                return BadRequest(sonuc);
+                return (int)HttpStatusCode.NotFound;
             }
+            else if (result == 0)
+            {
+                return (int)HttpStatusCode.NotImplemented;
+            }
+            return (int)HttpStatusCode.OK;
         }
 
         [HttpPut]

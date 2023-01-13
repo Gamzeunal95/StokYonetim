@@ -6,24 +6,22 @@ namespace StokYonetim.BL.Concrete
 {
     public class StokManager : ManagerBase<Stok>, IStokManager
     {
+        private readonly StokYonetimDbContext dbContext;
+
         public StokManager(StokYonetimDbContext dbContext) : base(dbContext)
         {
-
+            this.dbContext = dbContext;
         }
 
         public override async Task<int> CreateAsync(Stok entity)
         {
-            if (string.IsNullOrEmpty(entity.StokAdi))
+            var kategori = dbContext.Kategoriler.FirstOrDefault(p => p.Id == entity.KategoriId);
+            if (kategori == null)
             {
-                throw new Exception("Stok Adı Boş Bırakılamaz Berkay kızar");
+                return 0;
             }
-            if (string.IsNullOrEmpty(entity.Birim))
-            {
-                throw new Exception("Birim adı boş bırakılamaz");
-            }
-            return await base.CreateAsync(entity);
 
-            // Bu kısımda exeption fırlatıldığı için api kısmında try catch yapılmalı
+            return await base.CreateAsync(entity);
         }
     }
 }

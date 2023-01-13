@@ -18,8 +18,16 @@ namespace StokYonetim.DAL.EFCore.Concrete
 
         public async virtual Task<int> CreateAsync(T entity)
         {
-            await dbContext.Set<T>().AddAsync(entity);
-            return await dbContext.SaveChangesAsync();
+            try
+            {
+                await dbContext.Set<T>().AddAsync(entity);
+                return await dbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return 0;
         }
 
         public async virtual Task<int> DeleteAsync(T entity)
@@ -44,6 +52,7 @@ namespace StokYonetim.DAL.EFCore.Concrete
             return await dbContext.Set<T>().FindAsync(id);
 
         }
+
         public async virtual Task<T?> GetByAsync(Expression<Func<T, bool>> filter)
         {
             if (filter != null)
