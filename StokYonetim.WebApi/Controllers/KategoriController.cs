@@ -19,7 +19,7 @@ namespace StokYonetim.WebApi.Controllers
 
         // Endpoint eklemek
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
         {
             var result = await kategoriManager.GetAllAsync();
             if (result.Count == 0)
