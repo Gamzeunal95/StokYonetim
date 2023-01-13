@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using StokYonetim.BL.Abstract;
 using StokYonetim.Entities;
 
@@ -6,6 +7,7 @@ namespace StokYonetim.WebApi.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize]
     public class KategoriController : ControllerBase
     {
         private readonly IKategoriManager kategoriManager;

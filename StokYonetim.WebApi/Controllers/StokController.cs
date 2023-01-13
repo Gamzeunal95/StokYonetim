@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StokYonetim.BL.Abstract;
 using StokYonetim.Entities;
@@ -9,6 +10,7 @@ namespace StokYonetim.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class StokController : ControllerBase
     {
         private readonly IStokManager stokManager;
