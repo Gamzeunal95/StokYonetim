@@ -1,4 +1,4 @@
-# StokYonetim (Client kısmı mauı da yapıldı bu kısımda da yap tamamla)
+# StokYonetim 
 - Class Library 
 - Proje Konusu : Hem clientWebService + kendi WebServiceimizi yazacağız - Token olacak - Authentication 
 - Web APİ tarafına bağlanılacakları ayrı bir yerde tutmayı tercih edebiliriz. Ayrı bir DB olabilir. (APi tüketecek olan username password verilerini)
@@ -79,7 +79,10 @@
   - IStokManager
 - **Validations**
   - StokValidation
-
+--------------------------------------------------- 
+# Project 3 - StokYonetimMobile
+- .Net MAUI APP projesi
+- 
 
 --------------------------------------------------- 
 
