@@ -48,7 +48,7 @@ namespace StokYonetim.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<int> KategoriEkle(Kategori kategori) //Create-Post
+        public async Task<int> Post(Kategori kategori) //Create-Post-ekle
         {
             var sonuc = await kategoriManager.CreateAsync(kategori);
             if (sonuc > 0)
@@ -63,7 +63,7 @@ namespace StokYonetim.WebApi.Controllers
 
 
         [HttpPut]
-        public async Task<int> KategoriGuncelle(Kategori kategori) // Update-Put
+        public async Task<int> Put(Kategori kategori) // Update-Put-Güncelle
         {
             var sonuc = await kategoriManager.UpdateAsync(kategori);
             if (sonuc > 0)
@@ -78,7 +78,7 @@ namespace StokYonetim.WebApi.Controllers
 
 
         [HttpDelete()]
-        public async Task<int> KategoriSil(Kategori kategori)
+        public async Task<int> Delete(Kategori kategori)
         {
             var sonuc = await kategoriManager.DeleteAsync(kategori);
             if (sonuc > 0)

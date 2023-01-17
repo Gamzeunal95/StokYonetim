@@ -51,7 +51,7 @@ namespace StokYonetim.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<int> StokEkle(Stok stok)  //Create-Post
+        public async Task<int> Post(Stok stok)  //Create-Post
         {
             ValidationResult valresult = await validator.ValidateAsync(stok);
 
@@ -74,7 +74,7 @@ namespace StokYonetim.WebApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> StokGuncelle(Stok stok) // Update-Put
+        public async Task<IActionResult> Put(Stok stok) // Update-Put
         {
             var sonuc = await stokManager.UpdateAsync(stok);
             if (sonuc > 0)
@@ -88,7 +88,7 @@ namespace StokYonetim.WebApi.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> StokSil(Stok stok)
+        public async Task<IActionResult> Delete(Stok stok)
         {
             var sonuc = await stokManager.DeleteAsync(stok);
             if (sonuc > 0)

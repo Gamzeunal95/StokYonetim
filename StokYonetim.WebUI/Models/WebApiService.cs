@@ -1,4 +1,5 @@
 ﻿using StokYonetim.Entities;
+using StokYonetim.WebUI.Controllers;
 
 namespace StokYonetim.WebUI.Models
 {
@@ -19,9 +20,11 @@ namespace StokYonetim.WebUI.Models
         public async Task<T> GetById(int id)
         {
 
+            string tableName = nameof(T);
+            ApiUrls apiUrls = new ApiUrls(tableName);
+            var result = await httpClient.GetAsync(apiUrls.GetById + id.ToString());
 
-
-            return 0;
+            return result;
         }
 
     }
