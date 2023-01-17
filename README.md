@@ -63,7 +63,7 @@
 - NOT : JWT ayarlamalaını program.cs de yaptıktan sonra appsetting kısmında tanımlanması gere yapıldı.
 --------------------------------------------------- 
 
-# Project 3 - StokYonetim.BL  
+# Project 4 - StokYonetim.BL  
 - (Manager kısmında ne varsa bu kısımda yani iş katmanı -  iş kuralları ile alakalı her özellik interface classlarında belirtilecek)
 - Class Library 
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
@@ -80,11 +80,8 @@
 - **Validations**
   - StokValidation
 --------------------------------------------------- 
-# Project 4 - StokYonetimMobile // Çalışmadı MVC açıldı
-- .Net MAUI APP projesi
---------------------------------------------------- 
 
-# Project 4 - StokYonetim.WebUI
+# Project 5 - StokYonetim.WebUI
 - MVC Projesi açıldı.
 -**Controller**
   - KategoriController
