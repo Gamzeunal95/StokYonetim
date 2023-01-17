@@ -83,6 +83,7 @@
 
 # Project 5 - StokYonetim.WebUI
 - MVC Projesi açıldı.
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities )
 -**Controller**
   - KategoriController
 -**Models**
