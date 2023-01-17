@@ -118,3 +118,8 @@
 - Abstract klasörüne ınterface class ekleme yapıldı sonrasında açılan classın Concrete işine DAL classını açıldı. Örneğin; IKategoriDAL -> KategoriDAL
 - Tred ?? Araştır Async ile bağlantılı 
 - Task verdiğinizde başınada async eklemen aşağıdada await ile beklemen lazım
+
+
+### Proje Dokuman 
+![StokYonetim](https://user-images.githubusercontent.com/101207897/212961739-27c86ca4-3371-473e-ae4c-950b9df9b5d4.png)
+
