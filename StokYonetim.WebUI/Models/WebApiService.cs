@@ -1,5 +1,4 @@
 ﻿using StokYonetim.Entities;
-using StokYonetim.WebUI.Controllers;
 
 namespace StokYonetim.WebUI.Models
 {
