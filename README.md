@@ -63,7 +63,7 @@
 - NOT : JWT ayarlamalaını program.cs de yaptıktan sonra appsetting kısmında tanımlanması gere yapıldı.
 --------------------------------------------------- 
 
-# Project 3 - StokYonetim.BL  
+# Project 4 - StokYonetim.BL  
 - (Manager kısmında ne varsa bu kısımda yani iş katmanı -  iş kuralları ile alakalı her özellik interface classlarında belirtilecek)
 - Class Library 
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
@@ -80,19 +80,21 @@
 - **Validations**
   - StokValidation
 --------------------------------------------------- 
-# Project 4 - StokYonetimMobile // Çalışmadı MVC açıldı
-- .Net MAUI APP projesi
---------------------------------------------------- 
 
-# Project 4 - StokYonetim.WebUI
+# Project 5 - StokYonetim.WebUI
 - MVC Projesi açıldı.
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities )
 -**Controller**
   - KategoriController
 -**Models**
   - WebApiService (class açıldı. bu kısımı yazdık ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalmayalım)
 
 
+
+
+- NOT: StokYonetim.WebApi ve StokYonetim.WebUI projeleri brilikte çalıştırıldı.
 --------------------------------------------------- 
+- APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için BAse olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
 
 ### API yada client olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde thunder Client ya da Postman de test ederken de
 - Get -> Select
@@ -117,3 +119,8 @@
 - Abstract klasörüne ınterface class ekleme yapıldı sonrasında açılan classın Concrete işine DAL classını açıldı. Örneğin; IKategoriDAL -> KategoriDAL
 - Tred ?? Araştır Async ile bağlantılı 
 - Task verdiğinizde başınada async eklemen aşağıdada await ile beklemen lazım
+
+
+### Proje Dokuman 
+![StokYonetim](https://user-images.githubusercontent.com/101207897/212961739-27c86ca4-3371-473e-ae4c-950b9df9b5d4.png)
+
