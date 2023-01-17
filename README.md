@@ -90,6 +90,9 @@
   - WebApiService (class açıldı. bu kısımı yazdık ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalmayalım)
 
 
+
+
+- NOT: StokYonetim.WebApi ve StokYonetim.WebUI projeleri brilikte çalıştırıldı.
 --------------------------------------------------- 
 
 ### API yada client olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde thunder Client ya da Postman de test ederken de
