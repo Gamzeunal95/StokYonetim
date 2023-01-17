@@ -80,9 +80,17 @@
 - **Validations**
   - StokValidation
 --------------------------------------------------- 
-# Project 3 - StokYonetimMobile
+# Project 4 - StokYonetimMobile // Çalışmadı MVC açıldı
 - .Net MAUI APP projesi
-- 
+--------------------------------------------------- 
+
+# Project 4 - StokYonetim.WebUI
+- MVC Projesi açıldı.
+-**Controller**
+  - KategoriController
+-**Models**
+  - WebApiService (class açıldı. bu kısımı yazdık ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalmayalım)
+
 
 --------------------------------------------------- 
 
