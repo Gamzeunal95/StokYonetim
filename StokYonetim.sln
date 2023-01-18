@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StokYonetim.WebApi", "StokY
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StokYonetim.BL", "StokYonetim.BL\StokYonetim.BL.csproj", "{8519297F-C5A7-4964-8D6A-F4A9677B5EFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokYonetim.WebUI", "StokYonetim.WebUI\StokYonetim.WebUI.csproj", "{3C2A69DA-77D7-4554-A15B-A5D071C84538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StokYonetim.WebUI", "StokYonetim.WebUI\StokYonetim.WebUI.csproj", "{3C2A69DA-77D7-4554-A15B-A5D071C84538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataWebApi", "OdataWebApi\OdataWebApi.csproj", "{F0FDB2C9-1821-4D51-BEA0-0D6A279B72D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3C2A69DA-77D7-4554-A15B-A5D071C84538}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C2A69DA-77D7-4554-A15B-A5D071C84538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C2A69DA-77D7-4554-A15B-A5D071C84538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0FDB2C9-1821-4D51-BEA0-0D6A279B72D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0FDB2C9-1821-4D51-BEA0-0D6A279B72D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0FDB2C9-1821-4D51-BEA0-0D6A279B72D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0FDB2C9-1821-4D51-BEA0-0D6A279B72D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
