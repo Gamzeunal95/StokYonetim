@@ -88,14 +88,18 @@
   - KategoriController
 -**Models**
   - WebApiService (class açıldı. bu kısımı yazdık ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalmayalım)
-
+  
 
 
 
 - NOT: StokYonetim.WebApi ve StokYonetim.WebUI projeleri brilikte çalıştırıldı.
 --------------------------------------------------- 
-# Project 6 - OData (OpenData)
+# Project 6 - OdataWebApi (OpenData)
 - Bu projede O Data için çalışma yapıldı.
+- Aşağıdaki paketler install edildi.
+  - Microsoft.AspNetCore.OData
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL & StokYonetim.BL ) (OData için sıfırdan açmadıkta StokYonetim projesi üzerinden yapıdı.)
+
 
 --------------------------------------------------- 
 
