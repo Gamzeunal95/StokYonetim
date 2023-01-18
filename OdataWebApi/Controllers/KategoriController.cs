@@ -8,7 +8,7 @@ namespace OdataWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class KategoriController : ODataController // Normalde ControllerBase'den kalıtım alınıyordu ancak OData için bu ekilde kalıtım alınacak
+    public class KategoriController : ODataController // Normalde ControllerBase'den kalıtım alıyoduk ancak OData için bu ekilde kalıtım alınacak
     {
         private readonly IKategoriManager manager;
 
