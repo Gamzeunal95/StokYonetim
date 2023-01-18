@@ -55,11 +55,11 @@
   - Stokcontroller
   - LoginController
 - **Extensions**
-- StokYonetimExtensions (program.cs dosyasında şişme olmaması için böyle bir class açıyoruz ve program cs de belirtiyoruz)
+  - StokYonetimExtensions (program.cs dosyasında şişme olmaması için böyle bir class açıyoruz ve program cs de belirtiyoruz)
 - **Model**
-- Token
-- TokenHandler
-- LoginModel
+  - Token
+  - TokenHandler
+  - LoginModel
 - NOT : JWT ayarlamalaını program.cs de yaptıktan sonra appsetting kısmında tanımlanması gere yapıldı.
 --------------------------------------------------- 
 
@@ -88,13 +88,31 @@
   - KategoriController
 -**Models**
   - WebApiService (class açıldı. bu kısımı yazdık ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalmayalım)
-
+  
 
 
 
 - NOT: StokYonetim.WebApi ve StokYonetim.WebUI projeleri brilikte çalıştırıldı.
 --------------------------------------------------- 
-- APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için BAse olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
+# Project 6 - OdataWebApi (OpenData)
+- Bu projede O Data için çalışma yapıldı.
+- Aşağıdaki paketler install edildi.
+  - Microsoft.AspNetCore.OData
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL & StokYonetim.BL ) (OData için sıfırdan açmadıkta StokYonetim projesi üzerinden yapıdı.)
+- **Controller**
+  - KategoriController
+
+
+- NOT: `?$` kullanman gerektiğini unutma Postman GET kısmında 
+  - https://localhost:7252/odata/?$metadata
+  - https://localhost:7252/odata/?$metadata#Kategori
+  - https://localhost:7252/odata/Kategori?$select=aciklama  // kayıtların açıklamaları
+  - https://localhost:7252/odata/Kategori?$filter=id eq 4 //4 numaralı ıd
+  - https://localhost:7252/odata/Kategori?$filter=id ge 4  //4 numaralı ıd ve üstü
+  - https://localhost:7252/odata/Kategori?$filter=startswith(kategoriadi ,'l') //Kategoriadi l ile başlayanlar (aciklama da diyebilirdin ne filtre istiyorsak)
+--------------------------------------------------- 
+
+- Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
 
 ### API yada client olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde thunder Client ya da Postman de test ederken de
 - Get -> Select
