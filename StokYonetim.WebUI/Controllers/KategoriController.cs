@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StokYonetim.WebUI.Models.Abstract;
 
 namespace StokYonetim.WebUI.Controllers
 {
