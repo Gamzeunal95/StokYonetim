@@ -103,10 +103,12 @@
   - KategoriController
 
 
-- NOT: Postman GET kısmında 
+- NOT: `?$` kullanman gerektiğini unutma Postman GET kısmında 
   - https://localhost:7252/odata/?$metadata
   - https://localhost:7252/odata/?$metadata#Kategori
-  - 
+  - https://localhost:7252/odata/Kategori?$select=aciklama  // kayıtların açıklamaları
+  - https://localhost:7252/odata/Kategori?$filter=id eq 4 //4 numaralı ıd
+  - https://localhost:7252/odata/Kategori?$filter=id ge 4  //4 numaralı ıd ve üstü
 --------------------------------------------------- 
 
 - Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
