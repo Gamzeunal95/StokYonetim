@@ -109,6 +109,7 @@
   - https://localhost:7252/odata/Kategori?$select=aciklama  // kayıtların açıklamaları
   - https://localhost:7252/odata/Kategori?$filter=id eq 4 //4 numaralı ıd
   - https://localhost:7252/odata/Kategori?$filter=id ge 4  //4 numaralı ıd ve üstü
+  - https://localhost:7252/odata/Kategori?$filter=startswith(kategoriadi ,'l') //Kategoriadi l ile başlayanlar (aciklama da diyebilirdin ne filtre istiyorsak)
 --------------------------------------------------- 
 
 - Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
