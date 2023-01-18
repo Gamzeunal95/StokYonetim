@@ -94,7 +94,12 @@
 
 - NOT: StokYonetim.WebApi ve StokYonetim.WebUI projeleri brilikte çalıştırıldı.
 --------------------------------------------------- 
-- APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için BAse olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
+# Project 6 - OData (OpenData)
+- Bu projede O Data için çalışma yapıldı.
+
+--------------------------------------------------- 
+
+- Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
 
 ### API yada client olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde thunder Client ya da Postman de test ederken de
 - Get -> Select
