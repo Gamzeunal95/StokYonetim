@@ -55,11 +55,11 @@
   - Stokcontroller
   - LoginController
 - **Extensions**
-- StokYonetimExtensions (program.cs dosyasında şişme olmaması için böyle bir class açıyoruz ve program cs de belirtiyoruz)
+  - StokYonetimExtensions (program.cs dosyasında şişme olmaması için böyle bir class açıyoruz ve program cs de belirtiyoruz)
 - **Model**
-- Token
-- TokenHandler
-- LoginModel
+  - Token
+  - TokenHandler
+  - LoginModel
 - NOT : JWT ayarlamalaını program.cs de yaptıktan sonra appsetting kısmında tanımlanması gere yapıldı.
 --------------------------------------------------- 
 
