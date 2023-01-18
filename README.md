@@ -99,8 +99,14 @@
 - Aşağıdaki paketler install edildi.
   - Microsoft.AspNetCore.OData
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL & StokYonetim.BL ) (OData için sıfırdan açmadıkta StokYonetim projesi üzerinden yapıdı.)
+- **Controller**
+  - KategoriController
 
 
+- NOT: Postman GET kısmında 
+  - https://localhost:7252/odata/?$metadata
+  - https://localhost:7252/odata/?$metadata#Kategori
+  - 
 --------------------------------------------------- 
 
 - Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
