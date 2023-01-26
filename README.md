@@ -2,11 +2,11 @@
 - Class Library 
 - Proje Konusu : Hem clientWebService + kendi WebServiceimizi yazacağız - Token olacak - Authentication 
 - Web APİ tarafına bağlanılacakları ayrı bir yerde tutmayı tercih edebiliriz. Ayrı bir DB olabilir. (APi tüketecek olan username password verilerini)
-- Postgresql kullanıldı.Dberaver üzerinden DB'ye erişildi. Karşı PC'deki DB yere bağlanıldı. PC kendi localinde çalıştırılmadı.
+- Postgresql kullanıldı.Dberaver üzerinden DB'ye erişildi. Daha reel bir senaryo olması için karşı PC'deki DBye bağlanıldı.PC kendi localinde çalıştırılmadı. İsternirse Connection bilgileri değiştirilerek çalıştırılabilir.
 - NOT: ORM - > entitiy framework core (birde mirco ORM var bu da Dapper)
 
 # Project 1 - StokYonetim.Entities
-- Clas silindi yeni classlar eklendi.
+- Class silindi yeni classlar eklendi.
   - Kategori.cs
   - Stok.cs
   - BaseEntity
@@ -19,7 +19,7 @@
 - Aşağıdaki paketler install edildi.
   - Npgsql.EntityFrameworkCore.PostgreSQL
   - Microsoft.EntityFrameworkCore.Design  
-- Bir ORM kullanmamız gerekir. Bunun içinde entity Framework kullanıldı.
+- Bir ORM kullanmamız gerekir. Bunun içinde Entity Framework kullanıldı.
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities projesi)
 
 - **EfCore Folder**
@@ -33,7 +33,7 @@
     - StokDal
   - **Contexts**
     - StokYonetimDbContext
-  - **EntityConfigurations** (StokYonetimDbContext de yazdığımız OnModelCreating methodunu şişirmemek için bu kısımda classlar açarak configure ediyoruz. Navigation prop. lar)
+  - **EntityConfigurations** (StokYonetimDbContext de yazılan OnModelCreating methodunu şişirmemek için bu kısımda classlar açarak configure ediyoruz. Navigation prop. lar)
     - KategoriConfiguration  
     - StokConfiguration
     - RoleConfiguration
@@ -55,16 +55,16 @@
   - Stokcontroller
   - LoginController
 - **Extensions**
-  - StokYonetimExtensions (program.cs dosyasında şişme olmaması için böyle bir class açıyoruz ve program cs de belirtiyoruz)
+  - StokYonetimExtensions (program.cs dosyasında şişme olmaması için böyle bir class açıldı ve program cs de belirtildi)
 - **Model**
   - Token
   - TokenHandler
   - LoginModel
-- NOT : JWT ayarlamalaını program.cs de yaptıktan sonra appsetting kısmında tanımlanması gere yapıldı.
+- NOT : JWT ayarlamalarını program.cs de yaptıktan sonra appsetting kısmında tanımlanması yapıldı.
 --------------------------------------------------- 
 
 # Project 4 - StokYonetim.BL  
-- (Manager kısmında ne varsa bu kısımda yani iş katmanı -  iş kuralları ile alakalı her özellik interface classlarında belirtilecek)
+- (Manager kısmında ne varsa bu kısımda yani iş katmanı -  iş kuralları ile alakalı her özellik interface classlarında belirtildi)
 - Class Library 
 - Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL )
 - Aşağıdaki paketler install edildi.
@@ -87,7 +87,7 @@
 -**Controller**
   - KategoriController
 -**Models**
-  - WebApiService (class açıldı. bu kısımı yazdık ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalmayalım)
+  - WebApiService (class açıldı. bu kısımı yazdıldı ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalınmasın)
   
 
 
@@ -98,7 +98,7 @@
 - Bu projede O Data için çalışma yapıldı.
 - Aşağıdaki paketler install edildi.
   - Microsoft.AspNetCore.OData
-- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL & StokYonetim.BL ) (OData için sıfırdan açmadıkta StokYonetim projesi üzerinden yapıdı.)
+- Projeye Dependencies kısmından Referans verildi (StokYonetim.Entities & StokYonetim.DAL & StokYonetim.BL ) (OData denemesi StokYonetim projesi üzerinden yapıdı.)
 - **Controller**
   - KategoriController
 
@@ -112,9 +112,9 @@
   - https://localhost:7252/odata/Kategori?$filter=startswith(kategoriadi ,'l') //Kategoriadi l ile başlayanlar (aciklama da diyebilirdin ne filtre istiyorsak)
 --------------------------------------------------- 
 
-- Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki kontrollerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki base models concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
+- Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki controllerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki basemodels concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
 
-### API yada client olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde thunder Client ya da Postman de test ederken de
+### API yada client olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde Thunder Client ya da Postman de test ederken de
 - Get -> Select
 - Put -> Update
 - Post -> Create
