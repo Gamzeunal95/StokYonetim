@@ -91,7 +91,6 @@
   
 
 
-
 - NOT: StokYonetim.WebApi ve StokYonetim.WebUI projeleri brilikte çalıştırıldı.
 --------------------------------------------------- 
 # Project 6 - OdataWebApi (OpenData)
@@ -112,7 +111,7 @@
   - https://localhost:7252/odata/Kategori?$filter=startswith(kategoriadi ,'l') //Kategoriadi l ile başlayanlar (aciklama da diyebilirdin ne filtre istiyorsak)
 --------------------------------------------------- 
 
-- Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki controllerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki basemodels concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilelim
+- Stok yonetim UI APi ile ilk muhattap olacağı için ilk önce API deki controller sonra UI daki controllerlar yazılacak UI kısmındaki kontroller için Base olusturup kalıtım alarak controllerları yazıp çağırmak yeterli olacaktır. BaseWebApiService bu projedeki basemodels concrete içinde ve generic yapılacak ki diğer controllerlar için kullanabilsin
 
 ### API yada client olurken aşağıdaki gibi crud işlemlerinin adı aynı şekilde Thunder Client ya da Postman de test ederken de
 - Get -> Select
