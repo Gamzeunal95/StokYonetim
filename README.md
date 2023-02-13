@@ -88,8 +88,17 @@
   - KategoriController
 -**Models**
   - WebApiService (class açıldı. bu kısımı yazdıldı ki tüm kontrollerlarda tekrar tekrar yazmak zorunda kalınmasın)
-  
-
+  - LoginModel
+  - Token
+  - ApiUrl
+ - **Abstract**
+    - IWebApiBaseService
+    - IWebKategoriService
+ - **Concrete**
+    - BaseWebApiService
+    - KategoriWebApiService
+- **Views**
+  - Controllerlara göre Viewsler açıldı
 
 - NOT: StokYonetim.WebApi ve StokYonetim.WebUI projeleri brilikte çalıştırıldı.
 --------------------------------------------------- 
