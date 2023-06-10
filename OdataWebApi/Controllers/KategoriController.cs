@@ -17,6 +17,11 @@ namespace OdataWebApi.Controllers
             this.manager = manager;
         }
 
+
+        //DENEMEE GİT
+
+
+
         [EnableQuery(PageSize = 20)]
         [HttpGet]
         public async Task<IActionResult> Get()
